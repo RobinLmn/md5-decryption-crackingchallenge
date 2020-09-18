@@ -66,8 +66,8 @@ def create_request(url, hash_dic):
     """
     begin = time.time()
     
-    hash_code = get_hash(url)
-    pin = hash_dic[hash_code.strip()]
+    hash_code = get_hash(url).strip()
+    pin = hash_dic[hash_code]
     
     end = time.time()
     
